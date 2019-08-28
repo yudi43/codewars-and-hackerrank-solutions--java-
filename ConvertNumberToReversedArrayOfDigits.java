@@ -9,24 +9,29 @@ public class ConvertNumberToReversedArrayOfDigits {
 
         int digit = 33459;
         
-        //convert the digit to a string
+        //expected output : [9, 5, 4, 3, 3]
+
+        //Step 1: Convert the digit to a string
         String digitToString = Integer.toString(digit);
         int numOfDigits = digitToString.length();
 
-        //define an array which will hold the chars in reverse order
-        String finalList = "";
-
+        //Step 2: reverse the string
+        String reverseString = new String();
         for(int i=0; i<numOfDigits; i++) {
-            finalList.charAt(i) = digitToString.charAt(numOfDigits-i-1);
+            reverseString = reverseString + digitToString.charAt(numOfDigits-i-1);
         }
-
-        int digitArray[] = new int[numOfDigits];
-        for (int j=0; j<numOfDigits; j++) {
-            digitArray[j] = finalList[j]-'0';
-        }
-                
-        System.out.println(digitArray);
         
+
+
+        //Step 3: Put chars of result string in an int array one by one -- use parseInt()
+        int finalArray[] = new int[numOfDigits];
+        for(int j=0; j<numOfDigits; j++) {
+            finalArray[j] = Character.getNumericValue(reverseString.charAt(j));
+        System.out.println(finalArray[j]);
+
+        }
+    
+    
     }
 
 }
