@@ -5,9 +5,9 @@ public class ConvertNumberToReversedArrayOfDigits {
     // int revArray[];
 
 
-    public static void main(String[] args) {
+    public static int[] test(int digit) {
 
-        int digit = 33459;
+        // int digit = 33459;
         
         //expected output : [9, 5, 4, 3, 3]
 
@@ -27,11 +27,12 @@ public class ConvertNumberToReversedArrayOfDigits {
         int finalArray[] = new int[numOfDigits];
         for(int j=0; j<numOfDigits; j++) {
             finalArray[j] = Character.getNumericValue(reverseString.charAt(j));
-        System.out.println(finalArray[j]);
-
         }
     
-    
+        return finalArray;
     }
 
+    public static void main(String[] args) {
+        System.out.println(test(1246));
+    }
 }
