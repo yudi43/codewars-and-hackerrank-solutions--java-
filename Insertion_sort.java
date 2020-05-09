@@ -50,9 +50,7 @@ public class Insertion_sort {
             int arrItem = Integer.parseInt(arrItems[i]);
             arr[i] = arrItem;
         }
-
         insertionSort2(n, arr);
-
         scanner.close();
     }
 }
