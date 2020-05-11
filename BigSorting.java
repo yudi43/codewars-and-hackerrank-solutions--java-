@@ -15,6 +15,7 @@ import java.util.regex.*;
 
 public class BigSorting {
 
+
     // Complete the bigSorting function below.
     static String[] bigSorting(String[] unsorted) {
         ArrayList<BigInteger> newlist = new ArrayList<>();
@@ -33,8 +34,6 @@ public class BigSorting {
         }
 
         return result;
-
-
     }
 
     private static final Scanner scanner = new Scanner(System.in);

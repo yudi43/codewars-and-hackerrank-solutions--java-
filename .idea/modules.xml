@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/codewars-and-hackerrank-solutions--java-.iml" filepath="$PROJECT_DIR$/codewars-and-hackerrank-solutions--java-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testmod/testmod.iml" filepath="$PROJECT_DIR$/testmod/testmod.iml" />
     </modules>
   </component>
 </project>
